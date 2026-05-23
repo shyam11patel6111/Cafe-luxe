@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CAFE LUXE Menu - Explore our delicious selection of coffees, teas, mocktails, pastas, pizzas, and more.">
+    <title>Menu - CAFE LUXE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><a href="index.html" style="text-decoration: none; color: inherit;">CAFE LUXE</a></h1>
+                <span class="badge">Pure Veg</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="index.html#location">Location</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cart">
+                <button class="cart-icon-btn" id="cartIconBtn" aria-label="View Cart">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Menu Header -->
+    <section class="menu-header">
+        <div class="container">
+            <h1 class="menu-title">Our Menu</h1>
+            <p class="menu-subtitle">Discover our carefully crafted selection of beverages, meals, and desserts</p>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="beverages">Beverages</button>
+                <button class="filter-btn" data-category="food">Food</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-section">
+        <div class="container">
+            <!-- Hot Beverages -->
+            <div class="menu-category" data-category="beverages" id="beverages">
+                <h2 class="category-title">☕ Hot Beverages</h2>
+                
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Hot Coffee</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item" data-item-name="Espresso" data-item-price="140/-" data-item-desc="30ml">
+                            <div class="menu-item-header">
+                                <span class="item-name">Espresso</span>
+                                <span class="item-price">140/-</span>
+                            </div>
+                            <p class="item-desc">30ml</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Doppio</span>
+                                <span class="item-price">170/-</span>
+                            </div>
+                            <p class="item-desc">60ml</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Americano</span>
+                                <span class="item-price">190/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cappuccino</span>
+                                <span class="item-price">220/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cafe Latte</span>
+                                <span class="item-price">220/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Macchiato</span>
+                                <span class="item-price">190/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Flat White</span>
+                                <span class="item-price">240/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Caramel Latte</span>
+                                <span class="item-price">260/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Tiramisu Latte</span>
+                                <span class="item-price">260/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Hazelnut Delight</span>
+                                <span class="item-price">260/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">French Vanilla</span>
+                                <span class="item-price">260/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Irish Latte</span>
+                                <span class="item-price">260/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cafe Mocha</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Dark Chocolate Mocha</span>
+                                <span class="item-price">280/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Dark Caramel Mocha</span>
+                                <span class="item-price">280/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Nuttela Mocha</span>
+                                <span class="item-price">290/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Biscoff Latte</span>
+                                <span class="item-price">290/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Almond Crunch Latte</span>
+                                <span class="item-price">290/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Tiramisu Crunch Latte</span>
+                                <span class="item-price">280/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Affogato</span>
+                                <span class="item-price">240/-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Hot Chocolate</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Premium</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cinnamon</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Roasted Hazelnut</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Dark Caramel</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Caramel</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Mint Hot Chocolate</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cocoa Cookies</span>
+                                <span class="item-price">240/-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Hot Tea</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Green Tea</span>
+                                <span class="item-price">140/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Kahwa Tea</span>
+                                <span class="item-price">140/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Masala Tea</span>
+                                <span class="item-price">90/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Masala Chai Latte</span>
+                                <span class="item-price">90/-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cold Beverages -->
+            <div class="menu-category" data-category="beverages">
+                <h2 class="category-title">🧊 Cold Beverages</h2>
+                
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Cold Coffee (350ml / 520ml)</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Classic Cold Coffee</span>
+                                <span class="item-price">180/- / 250/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Hazelnut</span>
+                                <span class="item-price">200/- / 270/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Caramel</span>
+                                <span class="item-price">200/- / 270/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Irish</span>
+                                <span class="item-price">210/- / 280/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Tiramisu</span>
+                                <span class="item-price">210/- / 280/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Salted Caramel</span>
+                                <span class="item-price">210/- / 280/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Jawa Chip</span>
+                                <span class="item-price">210/- / 280/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Mocha</span>
+                                <span class="item-price">200/- / 270/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Nutella</span>
+                                <span class="item-price">250/- / 320/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Biscoff</span>
+                                <span class="item-price">220/- / 290/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Oreo</span>
+                                <span class="item-price">220/- / 290/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Kitkat</span>
+                                <span class="item-price">220/- / 290/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Luxe Special</span>
+                                <span class="item-price">220/- / 290/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cookie Crumble</span>
+                                <span class="item-price">210/- / 280/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Mud Pie</span>
+                                <span class="item-price">200/- / 270/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Dark Truffle</span>
+                                <span class="item-price">200/- / 270/-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Iced Coffee (350ml)</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Classic Iced Latte</span>
+                                <span class="item-price">170/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Vietnamese (with/without Milk)</span>
+                                <span class="item-price">180/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Espresso Ginger Ale</span>
+                                <span class="item-price">190/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Redbull Espresso</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Iced Mocha</span>
+                                <span class="item-price">200/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Espresso Tonic</span>
+                                <span class="item-price">190/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Sea Salt Caramel Latte</span>
+                                <span class="item-price">210/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Matcha Iced Latte</span>
+                                <span class="item-price">220/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Biscoff</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Iced Americano</span>
+                                <span class="item-price">130/-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Cold Brew (350ml)</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Classic</span>
+                                <span class="item-price">170/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Coldbrew Tonic</span>
+                                <span class="item-price">200/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Red Eye Cold Brew</span>
+                                <span class="item-price">240/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Gingerale Cold Brew</span>
+                                <span class="item-price">200/-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Iced Tea (350ml)</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Lemon Mint</span>
+                                <span class="item-price">160/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Passion Fruit</span>
+                                <span class="item-price">160/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Peach</span>
+                                <span class="item-price">160/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Wild Berry</span>
+                                <span class="item-price">160/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Blue Berry</span>
+                                <span class="item-price">160/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Mango</span>
+                                <span class="item-price">160/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Strawberry</span>
+                                <span class="item-price">160/-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Shakes (350ml / 520ml)</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Biscoff</span>
+                                <span class="item-price">250/- / 320/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Black Forest</span>
+                                <span class="item-price">160/- / 230/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Nutella</span>
+                                <span class="item-price">240/- / 310/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Mud Pie</span>
+                                <span class="item-price">260/- / 330/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Strawberry</span>
+                                <span class="item-price">220/- / 290/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Brownie</span>
+                                <span class="item-price">260/- / 330/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Kitkat (Chocolate/Vanilla)</span>
+                                <span class="item-price">230/- / 300/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cookie Crumble</span>
+                                <span class="item-price">260/- / 330/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Oreo (Chocolate/Vanilla)</span>
+                                <span class="item-price">230/- / 300/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Jawa Chip</span>
+                                <span class="item-price">250/- / 320/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Blueberry</span>
+                                <span class="item-price">220/- / 290/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Mango</span>
+                                <span class="item-price">230/- / 300/-</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Mix Berry</span>
+                                <span class="item-price">220/- / 290/-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Mocktails (350ml)</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Mojitos</span>
+                                <span class="item-price">130/-</span>
+                            </div>
+                            <p class="item-desc">Flavors: Mint, Lemon, Peach, Blueberry, Cranberry, Pomegranate, Coffee. Add popping fruit boba for 30 extra.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Roy Roger</span>
+                                <span class="item-price">155/-</span>
+                            </div>
+                            <p class="item-desc">Pomegranate, Grenadine & Coke-Based</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Costa Rica Sunrise</span>
+                                <span class="item-price">175/-</span>
+                            </div>
+                            <p class="item-desc">A refreshing mix of orange and pineapple, perfectly blended to taste and topped with mango boba.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Frozen Chilli Mango Margarita</span>
+                                <span class="item-price">190/-</span>
+                            </div>
+                            <p class="item-desc">Frozen mango blended with chilli and lime, topped with fresh mint.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Virgin Pina Colada</span>
+                                <span class="item-price">190/-</span>
+                            </div>
+                            <p class="item-desc">Freshly blended pineapple and coconut cream, with a splash of fizz and orange cubes.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Bellini</span>
+                                <span class="item-price">190/-</span>
+                            </div>
+                            <p class="item-desc">Grape nectar juice and orange juice, with fresh apple slices and lemon popping boba.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Café Luxe Universe</span>
+                                <span class="item-price">150/-</span>
+                            </div>
+                            <p class="item-desc">Blue Curacao Ice and Fizz, with Lemon & Mint</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Rocking Salty Dock</span>
+                                <span class="item-price">150/-</span>
+                            </div>
+                            <p class="item-desc">Salty Guava-Based Mocktail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Food Categories -->
+            <div class="menu-category" data-category="food" id="food">
+                <h2 class="category-title">🍽️ Food</h2>
+                
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Pasta</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Creamy Alfredo</span>
+                                <span class="item-price">250/-</span>
+                            </div>
+                            <p class="item-desc">(White Sauce) Creamy and cheesy sauce tossed with exotic veggies.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Tangy Spice Arrabbiata 🌶️</span>
+                                <span class="item-price">260/-</span>
+                            </div>
+                            <p class="item-desc">(Spice Red Sauce) Tangy & spicy tomato based sauce added with veggies.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Italian Love Basil Pesto Creamy</span>
+                                <span class="item-price">295/-</span>
+                            </div>
+                            <p class="item-desc">(Green Sauce) Fresh basil pesto sauce with cream n veggies with choice of pasta.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cheesy Alla Mamma Rosa</span>
+                                <span class="item-price">270/-</span>
+                            </div>
+                            <p class="item-desc">Very flavourful all time hit mixed tomato cream sauce tossed with veggies.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Baked Mac & Cheese With Pineapple</span>
+                                <span class="item-price">295/-</span>
+                            </div>
+                            <p class="item-desc">Cheesey baked macroni topped with pineapple.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Wood Fire Pizza (10")</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Classic Margarita</span>
+                                <span class="item-price">275/-</span>
+                            </div>
+                            <p class="item-desc">All-time favorite tomato and mozzarella pizza topped with fresh basil.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Neapolitan Style</span>
+                                <span class="item-price">350/-</span>
+                            </div>
+                            <p class="item-desc">Classic wood-fired pizza topped with buffalo mozzarella, olive, and basil.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Veggi Hotch Potch</span>
+                                <span class="item-price">380/-</span>
+                            </div>
+                            <p class="item-desc">Pizza topped with roasted bell peppers, jalapeños, onion, and mozzarella cheese.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Spicy BBQ Cottage Cheese</span>
+                                <span class="item-price">380/-</span>
+                            </div>
+                            <p class="item-desc">Spicy-based pizza topped with fresh mozzarella, BBQ spiced paneer, onion, jalapeños, and coriander.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Quatro Cheese</span>
+                                <span class="item-price">440/-</span>
+                            </div>
+                            <p class="item-desc">Four-cheese topped pizza with a very cheesy sauce (mozzarella, cheddar, feta, and burrata).</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Valentino</span>
+                                <span class="item-price">350/-</span>
+                            </div>
+                            <p class="item-desc">All-time favorite pizza topped with fresh mozzarella, spicy paneer, onion, and capsicum.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Americano</span>
+                                <span class="item-price">440/-</span>
+                            </div>
+                            <p class="item-desc">Pizza topped with pizza sauce, fresh mozzarella, corn, capers, onions, and exotic vegetables.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Peri Peri Pepper Paneer</span>
+                                <span class="item-price">399/-</span>
+                            </div>
+                            <p class="item-desc">Pizza topped with pizza sauce, fresh mozzarella, peri peri spiced paneer, onion, and spring onion.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cheese Beast</span>
+                                <span class="item-price">550/-</span>
+                            </div>
+                            <p class="item-desc">Wood-fired fresh dough pizzas loaded with 5 cheeses and topped with fresh burrata.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Marinara Pizza</span>
+                                <span class="item-price">410/-</span>
+                            </div>
+                            <p class="item-desc">Cherry tomato topped on Marinara Sauce with minced garlic along with mozzarella cheese and fresh basil leaf.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Sun Dried Tomato & Feta Cheese Pizza</span>
+                                <span class="item-price">450/-</span>
+                            </div>
+                            <p class="item-desc">Tomato Sauce & Mozzarella Cheese along with Sun Dried Tomato & Feta Cheese Garnish with Fresh Basil.</p>
+                        </div>
+                    </div>
+                    <p class="addon-note">Add-ons: Extra Cheese (100/-), Extra Topping (50/-), Extra Dip & Sauces (50/-)</p>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Bowls Heaven</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Mexican Treasure Hot Pot</span>
+                                <span class="item-price">250/-</span>
+                            </div>
+                            <p class="item-desc">All-time Favorite Mexican Corn & Bean Rice Platter, served with spicy Mexican bean curry, nachos, salsa, and cheese.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Burrito Rice Bowl</span>
+                                <span class="item-price">270/-</span>
+                            </div>
+                            <p class="item-desc">Spicy Mexican Rice topped with vegetable curry, cheese sauce, nachos, sour cream, & salsa.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">K-Pop Bowl</span>
+                                <span class="item-price">285/-</span>
+                            </div>
+                            <p class="item-desc">Korean-spiced ramen noodles bowl topped with chili vegetables.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Asian Prime Bowl</span>
+                                <span class="item-price">280/-</span>
+                            </div>
+                            <p class="item-desc">Green Veg Thai Curry and Basil Rice topped with Sago Crackles and sambal.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Italian Love</span>
+                                <span class="item-price">299/-</span>
+                            </div>
+                            <p class="item-desc">Creamy Vegetable Curry with Pesto Rice.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">American Delight</span>
+                                <span class="item-price">280/-</span>
+                            </div>
+                            <p class="item-desc">Pan-tossed corn rice topped with BBQ vegetable curry.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Chinese Checkmate</span>
+                                <span class="item-price">270/-</span>
+                            </div>
+                            <p class="item-desc">Chili Garlic Paneer served with Schezwan Fried Rice.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Amritsari Tadka</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                            <p class="item-desc">Veg Pulao topped with Amritsari Chole.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">The Desi Indian Bowl</span>
+                                <span class="item-price">270/-</span>
+                            </div>
+                            <p class="item-desc">Paneer Tikka Masala topped on jeera rice.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Appetizers</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Loaded Pepper & Chipotle Nachos with Beans</span>
+                                <span class="item-price">210/-</span>
+                            </div>
+                            <p class="item-desc">Pan-tossed beans with a spicy pepper-bean mixture, served on a bed of nachos, garnished with cherry tomatoes, olives, and jalapeños, topped with sour cream and cheese sauce. Served with salsa.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Smoked Nachos</span>
+                                <span class="item-price">150/-</span>
+                            </div>
+                            <p class="item-desc">Smoky, flavorful nachos served with cheese sauce and salsa.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Tex-Mex Tacos / Cheese Paneer Tacos</span>
+                                <span class="item-price">250/-</span>
+                            </div>
+                            <p class="item-desc">Spicy, fresh, and crispy tortillas stuffed with Tex-Mex beans, Mexican salad, sour cream, and cheese. Served with fresh salsa. Tacos stuffed with paneer tikka masala and salad, topped with cheese.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Hottie Cheese Balls</span>
+                                <span class="item-price">250/-</span>
+                            </div>
+                            <p class="item-desc">Stuffed spicy cheese balls, crumbed-fried and served with salsa and cocktail dips.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Dragon Cottage Cheese</span>
+                                <span class="item-price">250/-</span>
+                            </div>
+                            <p class="item-desc">Indo-Chinese style paneer tossed with bell peppers and Schezwan sauce, served on a bed of fried spinach.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Paneer Chilli</span>
+                                <span class="item-price">260/-</span>
+                            </div>
+                            <p class="item-desc">Indo-Chinese style paneer tossed with bell peppers and Schezwan sauce, served on a bed of fried spinach.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Veg Manchurian Dry</span>
+                                <span class="item-price">195/-</span>
+                            </div>
+                            <p class="item-desc">Indo-Chinese style Manchurian balls tossed in flavorful Schezwan sauce, topped with green onions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Finger Foods</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">French Fries</span>
+                                <span class="item-price">99/-</span>
+                            </div>
+                            <p class="item-desc">Plain Fries with Salt</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Loaded Fries</span>
+                                <span class="item-price">140/-</span>
+                            </div>
+                            <p class="item-desc">(Peri Peri, Chipotle, Indian Chatpata, Cheese Fries) Smoky, flavorful nachos served with cheese sauce and salsa.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Korean Spiced French Fries</span>
+                                <span class="item-price">140/-</span>
+                            </div>
+                            <p class="item-desc">Korean Spiced Fries Topped with Cheesy Herbs</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Stir-Fried Veggies</span>
+                                <span class="item-price">165/-</span>
+                            </div>
+                            <p class="item-desc">For diet conscious who want be healthy fibers mixed veggies sautted in butter and flavoured with salt pepper basil</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Garlic Bread / Chilli Butter Bread</span>
+                                <span class="item-price">145/-</span>
+                            </div>
+                            <p class="item-desc">French bread, cut into slices, topped with your choice of flavored butter, and baked crispy.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cheese Garlic Bread / Chilli Cheese Bread</span>
+                                <span class="item-price">175/-</span>
+                            </div>
+                            <p class="item-desc">French bread cut in slices n topped with butter with your flavored fresh cheese n baked crispy</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Burgers & Wraps</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Spicy Aloo Tikki Cheese</span>
+                                <span class="item-price">99/-</span>
+                            </div>
+                            <p class="item-desc">Spicy Aloo Tikki topped with Indian sauces and cheese fries.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Grilled Tandoori Paneer</span>
+                                <span class="item-price">160/-</span>
+                            </div>
+                            <p class="item-desc">Tandoori Paneer topped with Indian spice sauce, cheese, and chips.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Mexican</span>
+                                <span class="item-price">140/-</span>
+                            </div>
+                            <p class="item-desc">Spicy Mexican Wraps/Burger baked with cheese, served with side fries.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Sandwiches</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Chutney Cheese Desi</span>
+                                <span class="item-price">140/-</span>
+                            </div>
+                            <p class="item-desc">Green spicy chutney topped with cheese grilled served with wafers</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Chowpatty Spicy Masala Loaded Sandwich</span>
+                                <span class="item-price">185/-</span>
+                            </div>
+                            <p class="item-desc">3-layered Indian street-style sandwich topped with cheese and nylon sev.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Cheese Blast Sandwich</span>
+                                <span class="item-price">299/-</span>
+                            </div>
+                            <p class="item-desc">Loaded veg and cheese sandwich filled and baked with mozzarella cheese.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Peri Peri Paneer</span>
+                                <span class="item-price">280/-</span>
+                            </div>
+                            <p class="item-desc">BBQ sauce spread and stuffed with paneer, tomatoes, and onions.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Tandoori Paneer</span>
+                                <span class="item-price">270/-</span>
+                            </div>
+                            <p class="item-desc">Stuffed with cheese, onion, chutney, and tandoori paneer slices.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Hulk Sandwich</span>
+                                <span class="item-price">299/-</span>
+                            </div>
+                            <p class="item-desc">1-pound stuffed spicy veggie sandwich and baked with cheese.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Healthy Protein Salad Bowl</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Classic Caesar Salad</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                            <p class="item-desc">All sprouts, beans, and paneer topped with honey-lime mustard dressing.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Healthy Buddha Bowl</span>
+                                <span class="item-price">320/-</span>
+                            </div>
+                            <p class="item-desc">All sauted vegetables, beans, corn, and paneer topped with sour cream and house dressing.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Healthy Mexican</span>
+                                <span class="item-price">275/-</span>
+                            </div>
+                            <p class="item-desc">Tossed beans, corn, peas, and paneer topped with Mexicano-spiced vegetables, served on a bed of lettuce.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Proud Indian Platters</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Chole Bhature Platter</span>
+                                <span class="item-price">170/-</span>
+                            </div>
+                            <p class="item-desc">Authentic Bhatura served with Amritsari chole, chutney, and salad.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Amritsari Kulcha Platter</span>
+                                <span class="item-price">190/-</span>
+                            </div>
+                            <p class="item-desc">Stuffed kulcha served with Amritsari chole, chutney, and salad.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Chur Chur Paratha Platter</span>
+                                <span class="item-price">260/-</span>
+                            </div>
+                            <p class="item-desc">Crispy paratha served with Amritsari chole, paneer masala, chutney, and salad.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category" data-category="desserts" id="desserts">
+                <h2 class="category-title">🍰 Desserts</h2>
+                
+                <div class="category-subsection">
+                    <h3 class="subsection-title">Sweet Treat House of House Made Desserts (200ml)</h3>
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Waffles - Classic Style</span>
+                                <span class="item-price">150/-</span>
+                            </div>
+                            <p class="item-desc">Classic waffles served with ice cream, maple syrup, or honey.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Ultimate Chocolate-Loaded Waffle with Candy Sticks</span>
+                                <span class="item-price">170/-</span>
+                            </div>
+                            <p class="item-desc">Loaded waffles topped with candy, chocolate sauce, crumbled brownie, & chocolate ice cream.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Ultimate Dutch Brownie</span>
+                                <span class="item-price">189/-</span>
+                            </div>
+                            <p class="item-desc">Homemade crusty brownie topped with Dutch chocolate and ice cream.</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item-header">
+                                <span class="item-name">Sizzling Brownie</span>
+                                <span class="item-price">230/-</span>
+                            </div>
+                            <p class="item-desc">Walnut brownie topped with ice cream and chocolate, served on a hot plate to celebrate.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Special Note -->
+            <div class="special-note">
+                <p>✨ All food available in Jain and Swaminarayan varieties ✨</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>CAFE LUXE</h3>
+                    <p class="tagline">Luxurious • Delicious • Stylish</p>
+                    <div class="social-proof">
+                        <div class="rating-display">
+                            <span class="stars-small">★★★★★</span>
+                            <span>4.5/5 from 100+ reviews</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Location</h4>
+                    <p>Shoolin Complex, 3 - 4<br>Visnagar Rd, Jai Ambe Nagar<br>Unjha, Gujarat 384170</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p><strong>Opens at 11:30 AM</strong></p>
+                    <p>Monday - Sunday<br>11:30 AM - 10:00 PM</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Phone: <a href="tel:+919723552291">+91 9723552291</a></p>
+                    <p>Price Range: ₹200-400 per person</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CAFE LUXE. All rights reserved. | Women-Owned • LGBTQ+ Friendly • Inclusive Community Space</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ingredient Modal -->
+    <div id="ingredientModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title" id="modalItemName"></h2>
+            <div class="modal-price" id="modalItemPrice"></div>
+            <div class="modal-description" id="modalItemDesc"></div>
+            <h3 class="ingredients-title">Ingredients:</h3>
+            <ul class="ingredients-list" id="ingredientsList"></ul>
+            <button class="btn btn-primary btn-add-to-cart" id="addToCartBtn">Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <div class="cart-sidebar-header">
+            <h2 class="cart-title">Your Cart</h2>
+            <button class="cart-close" id="cartCloseBtn">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty">
+                <p>Your cart is empty</p>
+                <span class="cart-empty-icon">🛒</span>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span class="total-label">Total:</span>
+                <span class="total-amount" id="cartTotal">₹0</span>
+            </div>
+            <button class="btn btn-primary btn-checkout" id="checkoutBtn" disabled>Order</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Order Details Modal -->
+    <div id="orderModal" class="order-modal">
+        <div class="order-modal-content">
+            <span class="order-modal-close" id="orderModalClose">&times;</span>
+            <h2 class="order-modal-title">Share Your Details</h2>
+            <p class="order-modal-subtitle">We’ll send this order to WhatsApp for confirmation.</p>
+            <form id="orderForm" class="order-form">
+                <div class="form-group">
+                    <label for="customerName">Name</label>
+                    <input type="text" id="customerName" name="customerName" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" name="customerPhone" placeholder="10-digit phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerAddress">Address</label>
+                    <textarea id="customerAddress" name="customerAddress" rows="3" placeholder="Full delivery address" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="dietaryPreference">Dietary Preference</label>
+                    <select id="dietaryPreference" name="dietaryPreference" required>
+                        <option value="Regular" selected>Regular</option>
+                        <option value="Jain">Jain</option>
+                        <option value="Swaminarayan">Swaminarayan</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="paymentMethod">Payment Method</label>
+                    <select id="paymentMethod" name="paymentMethod" required>
+                        <option value="Cash on Delivery" selected>Cash on Delivery</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="customerNotes">Note (Optional)</label>
+                    <textarea id="customerNotes" name="customerNotes" rows="3" placeholder="Any special instructions, landmark, delivery notes, etc."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary order-submit-btn">Order</button>
+            </form>
+        </div>
+    </div>
+    <div class="order-overlay" id="orderOverlay"></div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top" aria-label="Scroll to top">
+        ↑
+    </button>
+
+    <script src="menu-data.js"></script>
+    <script src="script.js"></script>
+    <script src="menu-script.js"></script>
+</body>
+</html>
+
